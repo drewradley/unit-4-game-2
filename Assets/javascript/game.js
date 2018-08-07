@@ -223,7 +223,7 @@ $(document).on("click", ".player-image",function() {
         if(fightsFought===3)$(".restartB").attr("style", "visibility: visible");
         readyToFight=false;
         if(fightsFought===1)
-        $("h2").text("Pick yer next opponent!");
+        $("h2").text("Pick yer next opponent!"); 
         if(fightsFought===2)
         $("h2").text("Pick yer final opponent!");
         $(".enemyPic").attr("style", "visibility: hidden")
