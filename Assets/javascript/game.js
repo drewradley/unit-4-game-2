@@ -222,6 +222,10 @@ $(document).on("click", ".player-image",function() {
         $(".fightB").attr("style", "visibility: hidden");
         if(fightsFought===3)$(".restartB").attr("style", "visibility: visible");
         readyToFight=false;
+        if(fightsFought===1)
+        $("h2").text("Pick yer next opponent!");
+        if(fightsFought===2)
+        $("h2").text("Pick yer final opponent!");
         $(".enemyPic").attr("style", "visibility: hidden")
         $(".attack-info").text("You did "+playerChoices[playerNumber].attackVal + " damage to your opponent. You knocked them out.");
 
